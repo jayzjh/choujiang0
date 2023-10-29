@@ -18,14 +18,17 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            height: 200px;
             width: 200px;
+            height: 200px;
             padding: 20px;
-            margin: 20px;
             background-color: #ff5555;
-            box-shadow: #000000 0px 0px 10px;
+            box-shadow: 0 0 10px #000000;
             border-radius: 50%;
             transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         
         .light {
@@ -203,10 +206,12 @@
         }
         
         .result {
+            text-align: center;
             position: absolute;
-            top: 70%;
-            left: 52%;
-            transform: translate(-60%, -60%);
+            top: calc(50% + 110px);
+            /* 调整这个值以适应你的设计 */
+            left: 50%;
+            transform: translateX(-50%);
         }
         
         @keyframes twinkling {
